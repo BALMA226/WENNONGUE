@@ -1,0 +1,15 @@
+/* Fond de la page en gris */
+body {
+  background-color: black; /* gris */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-align: center; /* centre le texte par défaut */
+  h1{
+    color: red;
+     text-align: center;
+  }
+  H3 {
+    color: white;
+  }
+}

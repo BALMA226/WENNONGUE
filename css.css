@@ -1,0 +1,15 @@
+body {
+    display: flex;              /* Active le mode flexbox */
+    justify-content: center;    /* Centre horizontalement */
+    align-items: center;        /* Centre verticalement */
+    height: 100vh;              /* Hauteur = toute la fenêtre */
+    margin: 0;                  /* Supprime les marges par défaut */
+    background-color: #f4f4f9;  /* Couleur de fond optionnelle */
+}
+
+img {
+    width: 200px;               /* Largeur de l’image */
+    height: 200px;              /* Hauteur identique pour un cercle */
+    border-radius: 50%;         /* Rend l’image ronde */
+    object-fit: cover;          /* Ajuste l’image sans déformation */
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mes Services</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #013220; /* vert foncé */
+      color: white;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 20px 0;
+    }
+
+    .service {
+      background-color: rgba(255, 255, 255, 0.1);
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px;
+      width: 80%;
+    }
+
+    .service h2 {
+      margin-bottom: 10px;
+      color: #90ee90; /* vert clair pour contraste */
+    }
+
+    .btn {
+      background-color: #006400; /* vert foncé bouton */
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: #228b22; /* vert plus clair au survol */
+    }
+
+    .content {
+      display: none; /* masqué par défaut */
+      margin-top: 15px;
+    }
+
+    .content img, .content video {
+      max-width: 100%;
+      border-radius: 10px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mes Services</h1>
+
+  <!-- Service 1 -->
+  <div class="service">
+    <h2>Développement Web</h2>
+    <p>Je crée des sites modernes et responsives.</p>
+    <button class="btn" onclick="toggleContent('web')">Voir plus</button>
+    <div class="content" id="web">
+      <img src="WhatsApp Image 2026-01-30 at 20.18.05.jpeg" alt="Exemple de site web">
+      <video controls width="400">
+        <source src="demo-web.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la vidéo.
+      </video>
+    </div>
+  </div>
+
+  <!-- Service 2 -->
+  <div class="service">
+    <h2>Design Graphique</h2>
+    <p>Création de logos, affiches et visuels professionnels.</p>
+    <button class="btn" onclick="toggleContent('design')">Voir plus</button>
+    <div class="content" id="design">
+      <img src="photo/WhatsApp Image 2026-01-30 at 20.15.51 (1).jpeg" alt="Logo exemple">
+      <img src="photo/WhatsApp Image 2026-01-30 at 20.15.51.jpeg" alt="Logo exemple">
+      <img src="photo/WhatsApp Image 2026-01-30 at 20.15.52 (1).jpeg" alt="Logo exemple">
+      <img src="photo/WhatsApp Image 2026-01-30 at 20.15.52 (2).jpeg" alt="Logo exemple">
+      <img src="photo/WhatsApp Image 2026-01-30 at 20.15.52 (3).jpeg" alt="Logo exemple">
+      <img src="photo/WhatsApp Image 2026-01-30 at 20.15.52 (4).jpeg" alt="Logo exemple">
+      <img src="photo/WhatsApp Image 2026-01-30 at 20.15.52.jpeg" alt="Logo exemple">
+      <img src="photo/WhatsApp Image 2026-01-30 at 20.15.53 (1).jpeg" alt="Logo exemple">
+      <img src="photo/WhatsApp Image 2026-01-30 at 20.15.53 (2).jpeg" alt="Logo exemple">
+      <img src="photo/WhatsApp Image 2026-01-30 at 20.15.53 (3).jpeg" alt="Logo exemple">
+      <img src="photo/WhatsApp Image 2026-01-30 at 20.15.53 (4).jpeg" alt="Logo exemple">
+      <img src="photo/WhatsApp Image 2026-01-30 at 20.15.53 (5).jpeg" alt="Logo exemple">
+      <img src="photo/WhatsApp Image 2026-01-30 at 20.15.53.jpeg" alt="Logo exemple">
+      <img src="photo/WhatsApp Image 2026-01-30 at 20.35.22.jpeg" alt="Logo exemple">
+      <img src="photo/KKKK.jpeg" alt="Logo exemple">
+         </div>
+  </div>
+  <!-- Service 3 -->
+  <div class="service">
+    <h2>Montage Vidéo</h2>
+    <p>Production et montage de vidéos avec effets modernes.</p>
+    <button class="btn" onclick="toggleContent('video')">Voir plus</button>
+    <div class="content" id="video">
+      <video controls width="400">
+        <source src="montage-exemple.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la vidéo.
+      </video>
+    </div>
+  </div>
+
+  <script>
+    // Fonction pour afficher/masquer le contenu
+    function toggleContent(id) {
+      const content = document.getElementById(id);
+      if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "block"; // affiche
+      } else {
+        content.style.display = "none";  // masque
+      }
+    }
+  </script>
+</body>
+</html>
