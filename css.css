@@ -8,7 +8,7 @@ body {
 }
 
 img {
-    width: 200px;               /* Largeur de l’image */
+    width: 20px;               /* Largeur de l’image */
     height: 200px;              /* Hauteur identique pour un cercle */
     border-radius: 50%;         /* Rend l’image ronde */
     object-fit: cover;          /* Ajuste l’image sans déformation */
